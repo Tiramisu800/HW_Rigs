@@ -10,13 +10,10 @@ public class KnightController : MonoBehaviour
     [SerializeField] private KeyCode _JumpKey;
     [SerializeField] private float _moveSpeed = 5f;
     [SerializeField] private Button _jumpButton;
-    [SerializeField] private Slider _moveSlider;
     private bool isJump = false;
 
     void Update()
     {
-        _animator.SetFloat("Blend", _moveSlider.value);
-
         Move(); 
     }
     private void OnEnable()
